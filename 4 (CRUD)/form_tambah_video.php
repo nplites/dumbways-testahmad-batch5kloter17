@@ -25,8 +25,12 @@
 				<td>Kategori</td>
 				<td><input type="text" name="kategoris" required></td>					
 			</tr>
+			<tr>
+				<td>Link</td>
+				<td><input type="text" name="link" required></td>					
+			</tr>
 				<td>Upload File</td>
-				<td><input type="file" id="myFile" name="filename" required></td>
+				<td><input type="file" id="myFile" name="filename"></td>
 				<td><button type="submit">Simpan</button></td>					
 			</tr>				
 		</table>

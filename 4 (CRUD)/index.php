@@ -34,11 +34,11 @@
 			while($data = mysqli_fetch_array($query)) { ?>
 				<tr>
 					<td align="center"><?php echo $nomor++; ?>.</td>
-					<td><iframe width="560" height="315" src="https://www.youtube.com/embed/D60f8-IOtps" frameborder="0" 
+					<td><iframe width="560" height="315" src="<?php echo $data['Link']; ?>" frameborder="0" 
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</td>
-					<td><?php echo $data['judul']; ?></td>
-					<td><?php echo $data['kategori']; ?></td>
+					<td><?php echo $data['Judul']; ?></td>
+					<td><?php echo $data['Kategori']; ?></td>
 					<td width="90px" align="center">
 						<a href="form_edit.php?id=<?php echo $data['id']; ?>"><button>Edit</button></a> 
 						<a href="proses_hapus.php?id=<?php echo $data['id']; ?>" onclick="return confirm('Yakin hapus data?')"><button>Hapus</button></a>					
@@ -64,8 +64,8 @@
 			while($data = mysqli_fetch_array($quers)) { ?>
 				<tr>
 					<td align="center"><?php echo $nomor++; ?>.</td>
-					<td><?php echo $data['nama']; ?></td>
-					<td><?php echo $data['nomor']; ?></td>
+					<td><?php echo $data['Jenis']; ?></td>
+					<td><?php echo $data['Nomor']; ?></td>
 					<td width="90px" align="center">
 						<a href="form_edit.php?id=<?php echo $data['id']; ?>"><button>Edit</button></a> 
 						<a href="proses_hapus.php?id=<?php echo $data['id']; ?>" onclick="return confirm('Yakin hapus data?')"><button>Hapus</button></a>					

@@ -21,7 +21,7 @@
 		include "koneksi.php";
 		$id = $_GET['id'];
 
-		$query = mysqli_query($con, "SELECT * FROM test4 WHERE id = '$id'") or die(mysqli_error($con));
+		$query = mysqli_query($con, "SELECT * FROM video_tb WHERE id = '$id'") or die(mysqli_error($con));
 		$data = mysqli_fetch_array($query);
 		?>		
 		<table>	

@@ -11,7 +11,7 @@
     echo 'Connected successfully<br/>';  
 
     $sql = "create table video_tb(
-    id INT AUTO_INCREMENT,Judul VARCHAR(20) NOT NULL,Kategori VARCHAR(20),Link VARCHAR(50),primary key (id))";  
+    id INT AUTO_INCREMENT,Judul TEXT NOT NULL,Kategori VARCHAR(20),Link VARCHAR(50),primary key (id))";  
     
     if(mysqli_query($conn, $sql)){  
     echo "Table created successfully";  
