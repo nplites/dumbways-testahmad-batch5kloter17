@@ -4,7 +4,7 @@ include 'koneksi.php';
 $judul_video = $_POST['judul'];
 $kategori = $_POST['kategoris'];
 
-$query = mysqli_query($con, "UPDATE video_tb SET judul='$judul_video', kategori='$kategori' WHERE id='$id'") or die(mysqli_error($con));
+$query = mysqli_query($con, "UPDATE video_tb SET Judul='$judul_video', Kategori='$kategori' WHERE id='$id'") or die(mysqli_error($con));
 if($query) {
     echo "<script>alert('Data berhasil diedit!'); window.location='index.php';</script>";
 } else {

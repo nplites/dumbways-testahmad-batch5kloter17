@@ -1,5 +1,5 @@
 <?php 
 // koneksi dengan mysqli
-$con = mysqli_connect("localhost", "root", "", "crud2");
+$con = mysqli_connect("localhost", "root", "", "test4");
 
 ?>
